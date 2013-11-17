@@ -9,8 +9,7 @@ $(".image-block .image button").on("click", function() {
 
 var breakpoints = {
 	checkState: function() {
-		var state = window.getComputedStyle($("body")[0], ':after').getPropertyValue('content');
-		if (state != '"610"' && state != '"515"') {
+		if ($(window).width() > 610) {
 			//Control font size of header text
 			$("body > header h1").lettering().fitText(0.16);
 			$(".feature-article header h2").fitText(0.45);
@@ -22,7 +21,7 @@ var breakpoints = {
 	},
 	init: function() {
 		this.checkState();
-		$(window).on("resize", this.checkState);
+		$(window).on("resize orientationchange", this.checkState);
 	}
 }
 breakpoints.init();
