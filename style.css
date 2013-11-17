@@ -1014,11 +1014,6 @@ body > footer {
 		text-align: right;
 	}
 @media (max-width: 1350px) {
-	/*Let JS know about the breakpoints*/
-	body:after {
-		content: "1350";
-		display: none;
-	}
 	body > header h3 {
 		top: 15%;
 	}
@@ -1027,11 +1022,6 @@ body > footer {
 	body {
 		font-size: 90%;
 	}
-		/*Let JS know about the breakpoints*/
-		body:after {
-			content: "820";
-			display: none;
-		}
 	body > header h3 {
 		top: 10%;
 	}
@@ -1125,11 +1115,6 @@ body > footer {
 	body {
 		font-size: 80%;
 	}
-		/*Let JS know about the breakpoints*/
-		body:after {
-			content: "610";
-			display: none;
-		}
 	body > header {
 		display: block;
 		width: 100%;
@@ -1179,10 +1164,6 @@ body > footer {
 			}
 }
 @media (max-width: 515px) {
-	body:after {
-		content: "515";
-		display: none;
-	}
 	/*Override big text*/
 	.secondary-article article header h2, .secondary-article article header h3 {
 		white-space: pre-wrap !important;
