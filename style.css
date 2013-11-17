@@ -463,7 +463,7 @@ body > header {
 					text-transform: uppercase;
 				}
 .image-block {
-	background: #524741;
+	background: #71625a;
 	color: white;
 }
 	.image-block h2 {
@@ -472,6 +472,7 @@ body > header {
 		text-transform: uppercase;
 		font-size: 3.063em;
 		padding: 36px 0;
+		background: #524741;
 	}
 	.image-block .image {
 		position: relative;
