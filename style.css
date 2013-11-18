@@ -1,3 +1,4 @@
+/*LETS PUMP UP DA PIXELS*/
 /*Simple reset, plus box-model*/
 *, *:before, *:after {
 	padding: 0;
@@ -6,19 +7,16 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-
 /*Most of the headers should not be made bold by the browser*/
 h1, h2, h3, h4 {
 	font-weight: normal;
 }
-
 /*Set fonts for the body*/
 body {
 	font-size: 100%;
 	font-family: 'Merriweather', serif;
 	font-weight: 400;
 }
-
 /*Set width for main body content*/
 body > section, body > article, body > footer {
 	position: relative;
@@ -27,7 +25,6 @@ body > section, body > article, body > footer {
 	margin-left: auto;
 	margin-right: auto;
 }
-
 /*Set the width of the header so that the gray area stretches across*/
 body > header {
 	position: relative;
@@ -60,6 +57,7 @@ body > header {
 		body > header h1 .char6 {
 			margin-right: -0.05em;
 		}
+	/*Style the volume number*/
 	body > header h3 {
 		position: absolute;
 		top: 20%;
@@ -71,6 +69,7 @@ body > header {
 		text-transform: uppercase;
 		color: #b0aeb8;
 	}
+	/*Style the header sidebar about the barbie*/
 	body > header aside {
 		width: 100%;
 		padding-left: 20%;
@@ -79,6 +78,7 @@ body > header {
 		text-align: center;
 		color: #6e6c77;
 	}
+		/*The barbie "box"*/
 		body > header aside .box {
 			position: relative;
 			height: 40px;
@@ -96,6 +96,7 @@ body > header {
 				-webkit-box-shadow:  0px 14px 8px -8px rgba(0, 0, 0, 0.4);
 				box-shadow:  0px 14px 8px -8px rgba(0, 0, 0, 0.4);
 			}
+				/*Animation moves the cover to its default position behind the open box*/
 				body > header aside .box .cover {
 					z-index: 40;
 					left: -16%;
@@ -117,6 +118,7 @@ body > header {
 					 	-webkit-box-shadow:  0px 14px 20px -8px rgba(0, 0, 0, 0.4);
 					 	box-shadow:  0px 14px 20px -8px rgba(0, 0, 0, 0.4);
 					 }
+				/*Keyframes for the cover*/
 				@-webkit-keyframes openCover {
 					0%, 40% {
 						left:	24%;
@@ -217,6 +219,7 @@ body > header {
 						z-index: 40;
 					}
 				}
+		/*Sidebar header*/
 		body > header aside h2 {
 			font-family: 'Lora', serif;
 			font-size: 2.250em;
@@ -226,6 +229,7 @@ body > header {
 			margin-top: 25px;
 			margin-bottom: -20px;
 		}
+		/*Sidebar content, moved slightly down to give the overlapping effect*/
 		body > header aside p {
 			position: relative;
 			top: 35px;
@@ -233,6 +237,7 @@ body > header {
 			margin: auto;
 			font-size: 1.188em;
 		}
+/*Style the article that is placed next to the header bar*/
 .feature-article {
 	width: 40%;
 	max-width: 660px;
@@ -241,6 +246,7 @@ body > header {
 	display: inline-block;
 	vertical-align: top;
 }
+	/*Rotates the image slightly*/
 	.feature-article img {
 		position: relative;
 		display: block;
@@ -267,6 +273,7 @@ body > header {
 			     -o-transform: rotate(0deg);
 			        transform: rotate(0deg);
 		}
+	/*Move the header on top of the picture*/
 	.feature-article header {
 		position: relative;
 		z-index: 30;
@@ -276,6 +283,7 @@ body > header {
 		color: #fdcd84;
 		text-transform: uppercase;
 	}
+		/*Add the back shadow for the header*/
 		.feature-article header:after {
 			content: "";
 			background: rgba(0,0,0,0.2);
@@ -301,6 +309,7 @@ body > header {
 			     -o-transition: all 300ms ease;
 			        transition: all 300ms ease;
 		}
+			/*Change position when the image is hovered*/
 			.feature-article img:hover + header:after {
 				bottom: 40px;
 			}
@@ -347,6 +356,7 @@ body > header {
 				-webkit-box-shadow:  0px 0px 18px 10px rgba(0, 0, 0, 0.3);
 				box-shadow:  0px 0px 18px 10px rgba(0, 0, 0, 0.3);
 			}
+			/*Change the shadow when the image is hovered*/
 			.feature-article img:hover ~ .content:before {
 				-webkit-box-shadow:  0px 0px 20px 8px rgba(0, 0, 0, 0.2);
 				box-shadow:  0px 0px 20px 8px rgba(0, 0, 0, 0.2);
@@ -358,9 +368,11 @@ body > header {
 	.feature-article p {
 		font-size: 1.563em;
 	}
+/*Styles info area*/
 .quick-info {
 	margin-top: 30px;
 }
+	/*Sidebar that contains an article*/
 	.quick-info aside {
 		width: 13%;
 		margin-right: -4px;
@@ -384,6 +396,7 @@ body > header {
 			bottom: -10px;
 			margin-top: 10px;
 		}
+	/*The list with the bullets over the text*/
 	.quick-info .bullet-list {
 		margin-left: 4%;
 		width: 82.9%;
@@ -446,6 +459,7 @@ body > header {
 				     -o-transition: all 300ms ease;
 				        transition: all 300ms ease;
 			}
+				/*Move the bullet up when hovered*/
 				.quick-info .bullet-list li:hover img {
 					top: -20px;
 				}
@@ -462,10 +476,12 @@ body > header {
 				.quick-info .bullet-list .make {
 					text-transform: uppercase;
 				}
+/*The big image block with the map transition*/
 .image-block {
 	background: #71625a;
 	color: white;
 }
+	/*Header has different background than rest of block, changed accordingly*/
 	.image-block h2 {
 		font-family: 'Oswald', sans-serif;
 		text-align: center;
@@ -474,11 +490,12 @@ body > header {
 		padding: 36px 0;
 		background: #524741;
 	}
+	/*Wrapper for the image*/
 	.image-block .image {
 		position: relative;
 		overflow: hidden;
-		perspective: 1000;
 	}
+		/*The image sets the height for the block, the map underneath will match the height and width of the image*/
 		.image-block .image img {
 			position: relative;
 			left: 0;
@@ -492,9 +509,11 @@ body > header {
 			-o-transition: all 400ms ease;
 			transition: all 400ms ease;
 		}
+			/*Move out of the way when the map should be shown*/
 			.image-block .image.toggled img {
 				left: -100%;
 			}
+		/*Place the map behind the image, set the height and width to match the image*/
 		.image-block .image .map {
 			position: absolute;
 			z-index: 20;
@@ -524,6 +543,7 @@ body > header {
 			-o-transition: all 300ms ease;
 			transition: all 300ms ease;
 		}
+			/*Move the close button into position*/
 			.image-block .image.toggled .close {
 				top: 8px;
 			}
@@ -575,6 +595,7 @@ body > header {
 			   -o-transition: all 300ms ease;
 			   transition: all 300ms ease;
 			}
+			/*Shadow on top of the map image*/
 			.image-block .image .map-trigger:after {
 				content: "";
 				position: absolute;
@@ -599,7 +620,7 @@ body > header {
 				width: 0;
 				background: none;
 			}
-		/*Shadows*/
+		/*Shadows, pointer-events none is so the user can still interact with the map*/
 		.image-block .image:before {
 			content: "";
 			-webkit-pointer-events: none;
@@ -631,6 +652,7 @@ body > header {
 			-webkit-box-shadow: inset 0px 0px 90px 1px rgba(0, 0, 0, 0.7);
 			box-shadow: inset 0px 0px 90px 1px rgba(0, 0, 0, 0.7);
 		}
+	/*Text below image and the link to the credit*/
 	.image-block .caption {
 		padding: 25px;
 		font-size: 1.625em;
@@ -668,11 +690,13 @@ body > header {
 		text-align: center;
 		margin-bottom: 1em;
 	}
+		/*Allow image to overflow, but resize as necessary*/
 		.secondary-article article header img {
 			display: block;
 			max-width: 105%;
 			height: auto;
 		}
+		/*Style the header, add the borders*/
 		.secondary-article article header h2 {
 			font-size: 5em;
 			line-height: 1em;
@@ -689,6 +713,7 @@ body > header {
 	.secondary-article article p {
 		font-size: 1.375em;
 	}
+/*Move sidebar*/
 .secondary-article aside {
 	position: relative;
 	display: inline-block;
@@ -713,6 +738,7 @@ body > header {
 		-webkit-border-radius: 140px;
 		border-radius: 140px;
 	}
+	/*The blu-ray disc cover, position up so it overlaps the image block*/
 	.secondary-article aside .cover {
 		position: relative;
 		margin-top: -70px;
@@ -733,6 +759,7 @@ body > header {
 			     -o-transition: all 300ms ease-in-out;
 			        transition: all 300ms ease-in-out;
 		}
+			/*Move up on hover*/
 			.secondary-article aside .cover:hover img {
 				top: -20px;
 			}
@@ -766,6 +793,7 @@ body > header {
 				-webkit-box-shadow:  0px 0px 12px 8px rgba(0, 0, 0, 0.4);
 				box-shadow:  0px 0px 12px 8px rgba(0, 0, 0, 0.4);
 			}
+			/*Blur the shadow more on hover*/
 			.secondary-article aside .cover:hover:before {
 				-webkit-box-shadow:  0px 0px 30px 12px rgba(0, 0, 0, 0.6);
 				box-shadow:  0px 0px 30px 12px rgba(0, 0, 0, 0.6);
@@ -780,10 +808,12 @@ body > header {
 			margin-bottom: 1em;
 			padding: 0 10px;
 		}
+		/*Separators between elements*/
 		.secondary-article aside hr {
 			border: none;
 			border-top: 0.15em dashed #234f70;
 		}
+		/*Style the headers*/
 		.secondary-article aside header, .secondary-article aside .rating .number, .secondary-article aside .premier .info  {
 			font-family: 'Oswald', sans-serif;
 			font-size: 1em;
@@ -805,6 +835,7 @@ body > header {
 			border-top: 5px solid #3476a8;
 			border-bottom: 5px solid #3476a8;
 		}
+			/*Line up the "Rotten Tomatoes Rating" with the actual number*/
 			.secondary-article aside .rating header {
 				width: 46%;
 				margin-right: 2.5%;
@@ -823,6 +854,7 @@ body > header {
 				display: inline-block;
 				vertical-align: middle;
 			}
+			/*Style the meter, width is set inline presumably by an user*/
 			.secondary-article aside .rating .meter {
 				background: #619cc9;
 				width: 100%;
@@ -882,6 +914,7 @@ body > header {
 		padding-left: 40px;
 		margin-bottom: 40px;
 	}
+		/*Overlay water*/
 		.overflow header:before {
 			content: "";
 			position: absolute;
@@ -900,7 +933,7 @@ body > header {
 			        transition: all 300ms ease;
 		}
 			/*Drain the water*/
-			.overflow header:hover:before {
+			.overflow:hover header:before {
 				opacity: 0;
 				-webkit-transform: translateY(50%);
 				   -moz-transform: translateY(50%);
@@ -908,6 +941,7 @@ body > header {
 				     -o-transform: translateY(50%);
 				        transform: translateY(50%);
 			}
+		/*Rotate slightly*/
 		.overflow header h2 {
 			position: relative;
 			z-index: 30;
@@ -946,7 +980,8 @@ body > header {
 				     -o-transition: all 200ms ease;
 				        transition: all 200ms ease;
 			}
-			.overflow header:hover h2 {
+			/*On hover, straighten*/
+			.overflow:hover header h2 {
 				-webkit-transform: rotate(0deg);
 				   -moz-transform: rotate(0deg);
 				    -ms-transform: rotate(0deg);
@@ -954,9 +989,10 @@ body > header {
 				        transform: rotate(0deg);
 			}
 			/*Drain the water*/
-			.overflow header:hover h2:before {
+			.overflow:hover header h2:before {
 				opacity: 0;
 			}
+		/*Text is rotated slightly*/
 		.overflow p {
 			position: relative;
 			z-index: 60;
@@ -994,11 +1030,13 @@ body > header {
 				     -o-transform: rotate(1deg);
 				        transform: rotate(1deg);
 			}
+/*Footer with border*/
 body > footer {
 	border-top: 1px solid #e5e5e5;
 	padding: 20px 0;
 	color: #8c8c8c;
 }
+	/*Width pushes address to right edge*/
 	body > footer h4 {
 		font-family: 'Lato', sans-serif;
 		font-size: 1.063em;
@@ -1006,6 +1044,7 @@ body > footer {
 		vertical-align: top;
 		width: 69.5%;
 	}
+	/*Line up on right edge*/
 	body > footer address {
 		font-size: 0.813em;
 		font-style: normal;
@@ -1014,6 +1053,7 @@ body > footer {
 		width: 30%;
 		text-align: right;
 	}
+/*RESPONSIVE TIME!*/
 @media (max-width: 1350px) {
 	body > header h3 {
 		top: 15%;
@@ -1080,6 +1120,7 @@ body > footer {
 			width: 39%;
 		}
 }
+/*Style movie sidebar to display elements next to each other with this breakpoint*/
 @media (max-width: 820px) and (min-width: 516px) {
 	.secondary-article aside .cover, .secondary-article aside > header, .secondary-article aside > p, .secondary-article aside .rating, .secondary-article aside .premier {
 		display: inline-block;
@@ -1111,7 +1152,6 @@ body > footer {
 		display: none;
 	}
 }
-
 @media (max-width: 610px) {
 	body {
 		font-size: 80%;
@@ -1212,7 +1252,7 @@ body > footer {
 		.quick-info .bullet-list li {
 			width: 33%;
 		}
-		.quick-info .bullet-list li:nth-child(2n) {
+		.quick-info .bullet-list li:nth-child(4n) {
 			border-left: none;
 		}
 	.secondary-article aside .cover {

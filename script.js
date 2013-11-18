@@ -1,12 +1,11 @@
 //Make text fill container
 $(".bigText").bigtext();
-
 //show the map
 $(".image-block .image button").on("click", function() {
 	$(this).parent().toggleClass("toggled");
 	return false;
 })
-
+//Do different things when the window is small enough
 var breakpoints = {
 	checkState: function() {
 		if ($(window).width() > 610) {
