@@ -1,4 +1,4 @@
-##CSS Off 2013 Entry
+# CSS Off 2013 Entry
 
 This was my entry for the [2013 CSS Off](http://ums.sc/cssoff/). Take a poke around the code and let me know what you think.
 
